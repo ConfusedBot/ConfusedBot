@@ -75,7 +75,9 @@ class ConfusedBot(BaseAgent):
                     self.players.append(temp)
 
                 def checkState (boost):
-				if boost ().available(self) == True:
-				     self.state = boost()
-				elif clear ().available(self) == True:
-				       self.state = clear() 
+	        if clear ().available(self) == True:
+		      self.state = clear() 
+		elif calcShot ().available(boost) == True:
+	              self.state = boost()
+		elif time 0 .all(start) == True:
+		      self.state = quickShot()
